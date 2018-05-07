@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html { 
+  font-size: 62.5%;
+  height: 100%;
+}
+
+html,
+body {
+  background: #000;
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: normal;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.overlay {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: 100%;
+  z-index: 100;
+}
+
+section {
+  height: 100vh;
+  max-height: 120rem;
+  min-height: 60rem;
+  position: relative;
+  width: 100%;
+}
+
+section .bottom {
+  bottom: 0;
+}
+
+section .top {
+  top: 0;
+}
+
+section .foreground {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+section .bottom,
+section .top {
+  align-items: center;
+  display: flex;
+  height: 33.33%;
+  position: absolute;
+  width: 100%;
+  z-index: 500;
+}
+
+section .bottom .content,
+section .top .content {
+  margin: 0 auto;
+}
+
+.content.label {
+  background: #fff;
+  padding: 0 30px;
+  max-width: 800px;
+}
+
+.background {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  left: 0;
+  max-height: 100rem;
+  min-height: 60rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.background .content {
+  text-align: center;
+  width: 100%;
+}
+
+.background .content .top {
+  margin-bottom: 200px;
+}

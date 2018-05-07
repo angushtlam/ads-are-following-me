@@ -1,0 +1,94 @@
+.background .content img.asset__store {
+  height: auto;
+  width: 10rem;
+}
+
+section#landing {
+  background: url('../assets/landing.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+section#landing .foreground {
+  background: url('../assets/landing.png') no-repeat center;
+  background-size: cover;
+}
+
+section#landing .content {
+  text-align: center;
+}
+
+section#landing .content h1 {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 8.0rem;
+}
+
+section#visit {
+  background: url('../assets/visit.jpg') no-repeat center;
+  background-size: cover;
+}
+
+section#visit .foreground {
+  background: url('../assets/visit.png') no-repeat center;
+  background-size: cover;
+}
+
+section#visit .content {
+  text-align: center;
+}
+
+section#retargeting {
+  background: url('../assets/retargeting.jpg') no-repeat center;
+  background-size: cover;
+}
+
+section#retargeting .foreground {
+  background: url('../assets/retargeting.png') no-repeat center;
+  background-size: cover;
+}
+
+section#retargeting .content {
+  text-align: center;
+}
+
+section#cookies {
+  background: url('../assets/cookies.jpg') no-repeat center;
+  background-size: cover;
+}
+
+section#cookies .foreground {
+  background: url('../assets/cookies.png') no-repeat center;
+  background-size: cover;
+}
+
+section#cookies .content {
+  text-align: center;
+}
+
+section#everywhere {
+  background: url('../assets/everywhere_bg.png') no-repeat center;
+  background-size: cover;
+}
+
+section#everywhere .foreground {
+  background: url('../assets/everywhere.png') no-repeat center;
+  background-size: cover;
+}
+
+section#everywhere .content {
+  text-align: center;
+}
+
+section#conclusion {
+  background: url('../assets/conclusion.jpg') no-repeat center;
+  background-size: cover;
+}
+
+section#conclusion .foreground {
+  background: url('../assets/conclusion.png') no-repeat center;
+  background-size: cover;
+}
+
+section#conclusion .content {
+  text-align: center;
+}
