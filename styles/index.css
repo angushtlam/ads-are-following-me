@@ -14,21 +14,17 @@ body {
 }
 
 body {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 24px;
-  font-size: 2.4rem;
-  font-weight: normal;
+  font-family: 'Roboto', serif;
+  font-size: 1.4rem;
   height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', serif;
-  font-weight: bold;
+  font-family: 'Roboto', serif;
 }
 
 h1 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 4rem;
   margin: 0;
 }
 
@@ -42,11 +38,18 @@ h1 {
 }
 
 section {
-  height: 100vh;
-  max-height: 120rem;
-  min-height: 60rem;
+  background-size: cover !important;
+  height: 50rem;
   position: relative;
   width: 100%;
+}
+
+section:first-child {
+  height: 100vh;
+}
+
+section:last-child {
+  height: 100vh;
 }
 
 section .bottom {
@@ -58,6 +61,7 @@ section .top {
 }
 
 section .foreground {
+  background-size: cover !important;
   height: 100%;
   left: 0;
   position: absolute;
@@ -79,12 +83,13 @@ section .top {
 section .bottom .content,
 section .top .content {
   margin: 0 auto;
+  text-align: center;
 }
 
 .content.label {
   background: #fff;
-  padding: 0 30px;
-  max-width: 800px;
+  padding: 0 0.5rem;
+  max-width: 80%;
 }
 
 .background {
@@ -92,7 +97,6 @@ section .top .content {
   display: flex;
   height: 100%;
   left: 0;
-  max-height: 100rem;
   min-height: 60rem;
   position: fixed;
   top: 0;
@@ -107,4 +111,45 @@ section .top .content {
 
 .background .content .top {
   margin-bottom: 200px;
+}
+
+@media (min-width: 30rem) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .content.label {
+    padding: 0 1rem;
+    max-width: 60rem;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  body {
+    font-size: 2rem;
+  }
+
+  .content.label {
+    border-bottom: 1rem solid #333;
+    border-left: 0.1rem solid #333;
+    border-right: 1rem solid #aaa;
+    border-top: 0.1rem solid #aaa;
+    max-width: 80rem;
+    padding: 0 1.5rem;
+  }
+  
+  section {
+    height: 105vh;
+  }
+}
+
+@media (min-width: 88rem) {
+  .content.label {
+    padding: 0 2.5rem;
+    max-width: 100rem;
+  }
 }
