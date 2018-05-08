@@ -9,155 +9,63 @@ html {
 
 html,
 body {
-  background: #000;
   margin: 0;
 }
 
 body {
   color: #101010;
   font-family: 'Roboto', serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', serif;
-  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 3rem;
-  font-weight: 700;
   margin: 0;
 }
 
-.overlay {
-  left: 0;
-  position: absolute;
-  top: 0;
-  height: inherit;
-  width: 100%;
-  z-index: 100;
+
+.opinion_label {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
 }
 
-section {
-  background-size: cover !important;
-  height: 50rem;
-  position: relative;
-  width: 100%;
+.opinion_buttons {
+  margin-bottom: 1rem;
 }
 
-section:first-child {
-  height: 100vh;
+.opinion_buttons a {
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin: 0.1rem;
 }
 
-section:last-child {
-  height: 100vh;
+.opinion_buttons a.privacy {
+  background: linear-gradient(90deg, rgb(13, 143, 160), rgb(25, 60, 156));
 }
 
-section .bottom {
-  bottom: 0;
+.opinion_buttons a.middle {
+  background: linear-gradient(90deg, rgb(175, 49, 206), rgb(189, 21, 91));
 }
 
-section .top {
-  top: 0;
+.opinion_buttons a.services {
+  background: linear-gradient(90deg, rgb(104, 49, 206), rgb(46, 21, 189));
 }
 
-section .foreground {
-  background-size: cover !important;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-}
-
-section .bottom,
-section .top {
-  align-items: center;
-  display: flex;
-  height: 33.33%;
-  position: absolute;
-  width: 100%;
-  z-index: 500;
-}
-
-section .bottom .content,
-section .top .content {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.content.label {
-  background: #fff;
-  padding: 0 0.5rem;
-  max-width: 80%;
-}
-
-.background {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 50;
-}
-
-.background .content {
-  text-align: center;
-  width: 100%;
-}
-
-.background .content .top {
-  margin-bottom: 200px;
-}
-
-@media (min-width: 30rem) {
-  .mobile_only {
-    display: none;
-  }
-
-  body {
-    font-size: 1.6rem;
-  }
-
-  .content.label {
-    padding: 0 1rem;
-  }
-  
-  h1 {
-    font-size: 6rem;
-  }
-}
-
-@media (min-width: 60rem) {
-  body {
-    font-size: 2rem;
-  }
-
-  .content.label {
-    border-bottom: 1rem solid #333;
-    border-right: 1rem solid #aaa;
-    max-width: 80rem;
-    padding: 0 1.5rem;
-  }
-  
-  section {
-    height: 105vh;
-  }
-}
-
-@media (min-width: 80rem) {
-  .content.label {
-    padding: 0 2.5rem;
-    max-width: 100rem;
-  }
-
-  h1 {
-    font-size: 8rem;
-  }
+.opinion_buttons a:hover {
+  background: rgb(10, 198, 204);
 }
